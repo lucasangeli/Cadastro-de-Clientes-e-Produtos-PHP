@@ -1,0 +1,15 @@
+create table cliente(
+	idCli serial not null primary key,
+	nomeCli varchar(50),
+	cpf varchar(14),
+	telefone varchar(20),
+	dataNasc date 
+);
+
+create table produto(
+	idProd serial not null primary key,
+	nomeProd varchar(50),
+	quantidade varchar(10),
+	valor float,
+	uniMedida varchar(50)
+);
